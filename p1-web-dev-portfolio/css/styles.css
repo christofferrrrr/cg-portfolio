@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* .dm-sans-<uniquifier> {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+
+/* .black-han-sans-regular {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header > nav{
+    background-color: rgb(176, 176, 176);
+    position: fixed;
+    display: flex;
+}
+.nav-logo{
+    width: 10vh;
+    height: 10vh;
+}
+.nav-link {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Keeps the text color same as the surrounding text */
+    cursor: pointer; /* Changes cursor to a hand (pointer) */
+}
+
+.nav-link:visited, .nav-link:hover, .nav-link:focus, .nav-link:active {
+    text-decoration: none; /* Ensures no underline on hover, focus, visited, and active states */
+    color: inherit; /* Ensures the color does not change on hover, focus, visited, and active states */
+}
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+ul>li{
+    align-content: center;
+    justify-content: space-around;
+}
+    
+    
