@@ -40,13 +40,13 @@ header{
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    text-decoration: none; /* Removes the underline */
-    color: inherit; /* Keeps the text color same as the surrounding text */
-    cursor: pointer; /* Changes cursor to a hand (pointer) */
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
 }
 .nav-link:visited, .nav-link:hover, .nav-link:focus, .nav-link:active {
-    text-decoration: none; /* Ensures no underline on hover, focus, visited, and active states */
-    color: inherit; /* Ensures the color does not change on hover, focus, visited, and active states */
+    text-decoration: none; 
+    color: inherit; 
 }
 nav > ul{
     list-style-type: none;
