@@ -72,8 +72,8 @@ body{
     z-index: 1000;
 }
 .nav-logo{
-    width: 15em;
-    height: 10em;
+    width: 16em;
+    height: auto;
 }
 .Logo{
     height: auto;
