@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .urbanist-<uniquifier> {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
 /* .dm-sans-<uniquifier> {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
@@ -15,27 +23,63 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Black Han Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
+    scroll-behavior: smooth;
 }
-header{
-    background-color: rgb(17, 17, 17); 
+body{
+    background-color: #828282;
+}
+.nav-container-img{
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    align-self: center;  
+     
+}
+.nav-container{
+    justify-content: space-around;
+    padding: 10px;
+}
+.nav-night-mode{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+.night-mode{
+    width: 3em;
+    height: auto;
+}
+.header-container{
+    background-color: inherit; 
     width: 100%;
+    padding-top: 18em;
 }
 .nav-header{
     position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    padding: 1em;
-    background-color: inherit;
+    justify-content:space-around;
+    padding: 0;
+    background-color: #000000; 
+    z-index: 1000;
 }
 .nav-logo{
-    width: 10vh;
-    height: 10vh;
+    width: 15em;
+    height: 10em;
 }
+.Logo{
+    height: auto;
+    width:1em;
+}
+
 .nav-link {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
@@ -48,7 +92,7 @@ header{
     text-decoration: none; 
     color: inherit; 
 }
-nav > ul{
+nav > div > ul{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +100,203 @@ nav > ul{
     align-items: center;
     gap: 2em;
     margin-right: 4em;
+    padding-left: 4em;
 }
 ul > li{
     align-content: center;
     justify-content: center;
     color: white;
 }
-    
-    
+
+.head-contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+}
+.head-contain1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.intro-text{
+    text-align:center;
+    font-size:2em;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 1em;
+}
+.intro-text > p{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.intro-text1{
+    padding-top: 2em;
+    text-align:center;
+    font-size:2em;
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+}
+.down-btn{
+    color: #ffffff;
+    width: 12em;
+    height: 3em;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #000000;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.down-btn:hover{
+    background-color: #ededed;
+    color: #000000;
+}
+.intro-hello-img{
+    display: flex;
+    height: auto;
+    width: 12em;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img{
+    height: auto;
+    width: 23em;
+    border-radius: 50%;
+}
+
+.section-container{
+    padding-top: 6.5em;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3em;
+}
+.sect-cont{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+}
+.section-container > blockquote{
+    padding: 1%;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50em;
+    color:#000000;
+    border-radius: 25px;
+    background-color: rgb(224, 224, 224);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+footer > p, strong{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    background-color: inherit;
+}
