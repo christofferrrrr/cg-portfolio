@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Christopher Gamban Portfolio</title>
 </head>
 <body>
@@ -60,9 +61,9 @@
                 When I am not coding, I usually play games online with my friends and once or twice a week, I play badminton with my girlfriend's cousins. I mainly play Lawn Tennis but, due to lack of players within her relatives, I am forced to play badminton instead :)"
             </div>
         </div>
-        <div class="skill-cont">SKILLS <br> <br>
-            <div class="skill-category">
-                <div class="tech-cat">TECHNICAL
+        <div class="swiper-container">SKILLS
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">TECHNICAL
                     <div class="tech-skill">HTML</div>
                     <div class="tech-skill">CSS</div>
                     <div class="tech-skill">Microsoft Office</div>
@@ -72,18 +73,46 @@
                     <div class="tech-skill">Troubleshooting</div>
                     <div class="tech-skill">KB Utilization</div>
                 </div>
-            </div>
-            <div class="skill-category">SOFT <br> <br>
-                <div class="soft-skill">Communication</div>
-                <div class="soft-skill">Documentation</div>
-                <div class="soft-skill">Time Management</div>
-            </div>
-            <div class="skill-category">OTHERS / HOBBIES <br> <br>
-                <div class="other-skill">Lawn Tennis</div>
-                <div class="other-skill">Badminton</div>
-                <div class="other-skill">Online Games</div>
-            </div>     
+                <div class="swiper-slide">SOFT <br> <br>
+                    <div class="soft-skill">Communication</div>
+                    <div class="soft-skill">Documentation</div>
+                    <div class="soft-skill">Time Management</div>
+                </div>
+                <div class="swiper-slide">OTHERS / HOBBIES <br> <br>
+                    <div class="other-skill">Lawn Tennis</div>
+                    <div class="other-skill">Badminton</div>
+                    <div class="other-skill">Online Games</div>
+                </div>
+                <div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div> 
+        </div> 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+            });
+        </script> 
+
     </section>
+   
     
     <section>
         CONTACT ME
