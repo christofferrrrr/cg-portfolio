@@ -16,8 +16,10 @@
         </div>
         <div class="nav-container">
             <ul>
+                <li><a class="nav-link"href="#home">HOME</a></li>
                 <li><a class="nav-link"href="#about-me">ABOUT ME</a></li>
                 <li><a class="nav-link"href="#skills">SKILLS</a></li>
+                <li><a class="nav-link"href="#projects">PROJECTS</a></li>
                 <li><a class="nav-link"href="#contact">CONTACT ME</a></li>
             </ul>
         </div>
@@ -57,11 +59,10 @@
     <section id="about-me" class="section-container">
         <div class="sect-cont">ABOUT ME <br> <br>
             <div class="about-quote">
-                "Hello! I'm Christopher Gamban, an aspiring web developer transitioning from a technical support background. My experience in tech support has honed my problem-solving skills and communication abilities, but my true passion lies in web development. Enrolling in a web development boot camp, I’m eager to gain the skills needed to create user-friendly and visually appealing websites. Through this journey, I aim to document my progress, share my experiences, and connect with others who share a passion for tech and continuous learning. <br> <br>
-                When I am not coding, I usually play games online with my friends and once or twice a week, I play badminton with my girlfriend's cousins. I mainly play Lawn Tennis but, due to lack of players within her relatives, I am forced to play badminton instead :)"
+                "Hello! I'm Christopher Gamban, an aspiring web developer transitioning from a technical support background. My experience in tech support has honed my problem-solving skills and communication abilities, but my true passion lies in web development. Enrolling in a web development boot camp, I’m eager to gain the skills needed to create user-friendly and visually appealing websites. Through this journey, I aim to document my progress, share my experiences, and connect with others who share a passion for tech and continuous learning.
             </div>
         </div>
-        <div class="swiper-container">SKILLS
+        <div id="skills" class="swiper-container">SKILLS
             <div class="swiper-wrapper">
                 <div class="swiper-slide">TECHNICAL
                     <div class="tech-skill">HTML</div>
@@ -74,14 +75,14 @@
                     <div class="tech-skill">KB Utilization</div>
                 </div>
                 <div class="swiper-slide">SOFT <br> <br>
-                    <div class="soft-skill">Communication</div>
-                    <div class="soft-skill">Documentation</div>
-                    <div class="soft-skill">Time Management</div>
+                    <div class="tech-skill">Communication</div>
+                    <div class="tech-skill">Documentation</div>
+                    <div class="tech-skill">Time Management</div>
                 </div>
-                <div class="swiper-slide">OTHERS / HOBBIES <br> <br>
-                    <div class="other-skill">Lawn Tennis</div>
-                    <div class="other-skill">Badminton</div>
-                    <div class="other-skill">Online Games</div>
+                <div class="swiper-slide"> SPORTS <br> <br>
+                    <div class="tech-skill">Lawn Tennis</div>
+                    <div class="tech-skill">Badminton</div>
+                    <div class="tech-skill">Online Games</div>
                 </div>
                 <div>
                     <div class="swiper-pagination"></div>
@@ -112,12 +113,37 @@
         </script> 
 
     </section>
+
+    <section id="projects">
+    </section>
    
     
-    <section>
-        CONTACT ME
+    <section id="contact" class="contact-container">
+        <div class="chit-chat">
+            <img class="img-chat" src="./assets/communications.png" alt="">
+            <div class="chit-chat-title">Let's Have A Chit Chat!</div>
+            <div class="chit-chat-text">Whether it is about a project, philosophy, technology, or world. I am always eager to engage in thoughtful discussions; Just send me a message using this form on the right</div>
+        </div>
+        <div class="">
+            <form class="contact-form" action="">
+                <div class="contact-details">
+                    <label for="email">Email</label> <br>
+                    <input type="email" placeholder="Enter your email address" required>
+                </div> 
+                <div class="contact-details">
+                    <label for="name">Full Name</label><br>
+                    <input type="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="contact-details">
+                    <label for="message">Input your message</label><br>
+                    <input type="text" placeholder="Type your message..." required>
+                </div>
+                <div class="contact-details">
+                    <input type="button" value="Send Message">
+                </div>
+            </form>
+        </div>
     </section>
-
 
 <br><br><br>
 <footer>
