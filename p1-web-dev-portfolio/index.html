@@ -65,51 +65,57 @@
         <div id="skills" class="swiper-container">SKILLS
             <div class="swiper-wrapper">
                 <div class="swiper-slide">TECHNICAL
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/html.png" alt="HTML Logo"> HTML
+                    <div class="swiper-content">
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/html.png" alt="HTML Logo"> HTML
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/css.png" alt="CSS Logo">CSS
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/office.png" alt="Microsoft Office Logo">Microsoft Office
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/azure-active-directory.png" alt="Active Directory Logo">Active Directory
+                        </div>
+                        <div class="tech-skill">
+                            <img class="servicenow-logo" src="./assets/servicenow-2.png" alt="ServiceNow Logo">ServiceNow
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/windows.png" alt="Windows Logo">Windows Configuration
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/toolkit.png" alt="Troubleshooting Logo">Troubleshooting
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/kb.png" alt="Knowledge Base Logo">KB Utilization
+                        </div>
                     </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/css.png" alt="CSS Logo">CSS
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/office.png" alt="Microsoft Office Logo">Microsoft Office
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/azure-active-directory.png" alt="Active Directory Logo">Active Directory
-                    </div>
-                    <div class="tech-skill">
-                        <img class="servicenow-logo" src="./assets/servicenow-2.png" alt="ServiceNow Logo">ServiceNow
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/windows.png" alt="Windows Logo">Windows Configuration
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/toolkit.png" alt="Troubleshooting Logo">Troubleshooting
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/kb.png" alt="Knowledge Base Logo">KB Utilization
+                </div>  
+                <div class="swiper-slide">SOFT 
+                    <div class="swiper-content">
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/customer-service.png" alt="Communation Logo">Communication
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/document.png" alt="Document Logo">Documentation
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/save-time.png" alt="Save Time Logo">Time Management
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide">SOFT <br> <br>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/customer-service.png" alt="Communation Logo">Communication
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/document.png" alt="Document Logo">Documentation
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/save-time.png" alt="Save Time Logo">Time Management
-                    </div>
-                </div>
-                <div class="swiper-slide"> SPORTS <br> <br>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/court.png" alt="Tennis Court Logo">Lawn Tennis
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/badminton.png" alt="Badminton Racket with shuttlecock Logo">Badminton
-                    </div>
-                    <div class="tech-skill">
-                        <img class="skill-logo" src="./assets/online-game.png" alt="Globe with console Logo">Online Games
+                <div class="swiper-slide"> SPORTS
+                    <div class="swiper-content">
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/court.png" alt="Tennis Court Logo">Lawn Tennis
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/badminton.png" alt="Badminton Racket with shuttlecock Logo">Badminton
+                        </div>
+                        <div class="tech-skill">
+                            <img class="skill-logo" src="./assets/online-game.png" alt="Globe with console Logo">Online Games
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -119,33 +125,13 @@
                 </div>
             </div> 
         </div> 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-            });
-        </script> 
 
     </section>
 
     <section id="projects" class="project-container"> 
         <label for="projects">PROJECTS</label>
         <div class="proj-container">
-            <div class="proj-container item1">Project 1</div>
+            <div class="proj-container item1">Portfolio</div>
             <div class="proj-container item2">Project 2</div>
             <div class="proj-container item3">Project 3</div>
         </div>
@@ -182,5 +168,25 @@
     <p>&copy; 2024 developed by Christopher Gamban, with design inspired from Diwash Lamichhane.</p>
 </footer>
     
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    });
+</script> 
 </body>
 </html>
