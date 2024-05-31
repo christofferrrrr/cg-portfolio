@@ -213,6 +213,7 @@ main {
     justify-content: center;
     text-align: center;
     font-size: var(--size-4xl);
+    margin-top: 3rem;
 }
 
 .intro-text1 {
@@ -225,14 +226,14 @@ main {
 .intro-img {
     border-radius: 50%;
     height: auto;
-    width: 25rem;
+    width: 15rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .intro-img1 {
     height: auto;
-    width: 25rem;
+    width: 15rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
