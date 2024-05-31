@@ -3,60 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="website icon" type="png" href="assets/cg3bg.png">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
     <title>Christopher Gamban Portfolio</title>
 </head>
 <body>
-    <nav class="nav-header">
-        <div class="nav-container-img">
-            <a href="#home">
-                <img class="nav-logo" src="./assets/cg3-removebg-preview.png" alt="Christopher Gamban Logo">
-            </a>
-        </div>
-        <div class="nav-container">
-            <ul>
-                <li><a class="nav-link"href="#home">HOME</a></li>
-                <li><a class="nav-link"href="#about-me">ABOUT ME</a></li>
-                <li><a class="nav-link"href="#skills">SKILLS</a></li>
-                <li><a class="nav-link"href="#projects">PROJECTS</a></li>
-                <li><a class="nav-link"href="#contact">CONTACT ME</a></li>
-            </ul>
-        </div>
-        <div class="nav-night-mode">
-            <img class="night-mode" src="./assets/day-and-night.png" alt="NIGHT MODE">
-            <label class="switch">
-                <input type="checkbox" checked>
-                <span class="slider round"></span>
-            </label>
-        </div>
-    </nav>
-
-    <header id="home" class="header-container">
-        <div class="head-contain">
-            <div class="intro-text">
-                <img class="intro-hello-img" src="./assets/smile.png" alt="Smiley Icon">
+    <header class="header">
+        <nav class="header-nav">
+            <figure class="nav-item">
+                <a href="#home">
+                    <img class="nav-logo" src="./assets/cg3-removebg-preview.png" alt="Christopher Gamban Logo">
+                </a>
+            </figure>
+            <div class="nav-item">
+                <ul class="nav-menu">
+                    <li><a class="nav-link"href="#home">HOME</a></li>
+                    <li><a class="nav-link"href="#about-me">ABOUT ME</a></li>
+                    <li><a class="nav-link"href="#skills">SKILLS</a></li>
+                    <li><a class="nav-link"href="#projects">PROJECTS</a></li>
+                    <li><a class="nav-link"href="#contact">CONTACT ME</a></li>
+                </ul>
             </div>
-            <div class="head-contain1">
-                <div class="intro-text">
-                    <p class="intro">Hi! My name is</p>
-                    <h1 class="intro">CHRISTOPHER GAMBAN</h1>
-                    <p class="intro">Future Web Developer</p>
-                </div>
-                <div class="intro-text1">
-                    <a href="https://www.facebook.com/kwislg" target="_blank"><img class="Logo" src="./assets/fb.png" alt="Christopher Gamban Facebook Link"></a>
-                    <a href="https://github.com/christofferrrrr" target="_blank"><img class="Logo" src="./assets/ghub.png" alt="Christopher Gamban Github Link"></a>
-                    <a href="https://www.linkedin.com/in/kwislg/" target="_blank"><img class="Logo" src="./assets/li.png" alt="Christopher Gamban LinkedIn Link"></a>
-                    <a href="https://drive.google.com/uc?export=download&id=1LwFtVMS5Z1WCQyCZbePlpzDZf-nLsb1a" download="Christopher Gamban Resume.pdf"> <input class="down-btn" type="button" value="Download Resume"></a>
-                </div>
-            </div>
-            <div class="head-contain">
-                <img class="intro-img" src="./assets/pic.jpg" alt="Christopher Gamban Image">
-            </div>
-        </div>
+            <!-- <div class="nav-item">
+                <img class="nav-night-img" src="./assets/day-and-night.png" alt="NIGHT MODE">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div> -->
+        </nav>
     </header>
 
-    <section id="about-me" class="section-container">
+    <main>
+        <hero id="home" class="hero container">
+            <div class="head-contain">
+                <div class="intro-text">
+                    <img class="intro-img1" src="./assets/smile.png" alt="Smiley Icon">
+                </div>
+                <div class="head-contain1">
+                    <div class="intro-text">
+                        <p>Hi! My name is</p>
+                        <h1>CHRISTOPHER GAMBAN</h1>
+                        <p>Future Web Developer</p>
+                    </div>
+                    <div class="intro-text1">
+                        <a href="https://www.facebook.com/kwislg" target="_blank"><img class="Logo" src="./assets/fb.png" alt="Christopher Gamban Facebook Link"></a>
+                        <a href="https://github.com/christofferrrrr" target="_blank"><img class="Logo" src="./assets/ghub.png" alt="Christopher Gamban Github Link"></a>
+                        <a href="https://www.linkedin.com/in/kwislg/" target="_blank"><img class="Logo" src="./assets/li.png" alt="Christopher Gamban LinkedIn Link"></a>
+                        <a href="https://drive.google.com/uc?export=download&id=1LwFtVMS5Z1WCQyCZbePlpzDZf-nLsb1a" download="Christopher Gamban Resume.pdf"> <input class="down-btn" type="button" value="Download Resume"></a>
+                    </div>
+                </div>
+                <div class="head-contain">
+                    <img class="intro-img" src="./assets/pic.jpg" alt="Christopher Gamban Image">
+                </div>
+            </div>
+        </hero>
+
+    <section id="about-me" class="section container">
         <div class="sect-cont">ABOUT ME <br> <br>
             <div class="about-quote">
                 "Hello! I'm Christopher Gamban, an aspiring web developer transitioning from a technical support background. My experience in tech support has honed my problem-solving skills and communication abilities, but my true passion lies in web development. Enrolling in a web development boot camp, I’m eager to gain the skills needed to create user-friendly and visually appealing websites. Through this journey, I aim to document my progress, share my experiences, and connect with others who share a passion for tech and continuous learning.
@@ -92,7 +97,7 @@
                         </div>
                     </div>
                 </div>  
-                <div class="swiper-slide">SOFT 
+                <!-- <div class="swiper-slide">SOFT 
                     <div class="swiper-content">
                         <div class="tech-skill">
                             <img class="skill-logo" src="./assets/customer-service.png" alt="Communation Logo">Communication
@@ -119,10 +124,10 @@
                     </div>
                 </div>
             </div> 
-        </div> 
+        </div>  -->
     </section>
 
-    <section id="projects" class="project-container">
+    <!-- <section id="projects" class="project-container">
         <div class="project-header">PROJECTS
             <div class="proj-container">
                 <div class="proj-item">
@@ -167,12 +172,14 @@
             </div>
         </div>
     </section>
+
+    </main>
     
 <footer>
     <p>&copy; 2024 developed by Christopher Gamban, with design inspired from Diwash Lamichhane.</p>
-</footer>
+</footer>  -->
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
@@ -201,7 +208,7 @@
         var mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         window.location.href = mailtoLink;
-    }
-</script>
+    } 
+</script> -->
 </body>
 </html>
